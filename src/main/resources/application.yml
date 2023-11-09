@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: ${MY_SQL_CONNECT}
+  jpa:
+    # Show or not log for each sql query
+    show-sql: true
+    hibernate:
+      # Hibernate ddl auto (validate, create, create-drop, update)
+      ddl-auto: update
+  mvc:  # the fix for swagger
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+server:
+  port: 8080
+
