@@ -59,7 +59,7 @@ jobs:
           command: |
             cd action/
             source /etc/environment
-            java -jar java-app.war
+            java -jar java-app.war &
           host: ${{ secrets.HOST }}
           user: ${{ secrets.SSH_USER }}
           pass: ${{ secrets.SSH_PASSWORD }}
