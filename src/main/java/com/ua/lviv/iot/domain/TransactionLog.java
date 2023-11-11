@@ -3,10 +3,12 @@ package com.ua.lviv.iot.domain;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.sql.Timestamp;
 import java.util.Objects;
 
 @Entity
+@Table(name = "transaction_log", schema = "dbo")
 public class TransactionLog {
 
     @Id

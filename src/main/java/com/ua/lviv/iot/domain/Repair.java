@@ -5,6 +5,7 @@ import java.sql.Timestamp;
 import java.util.Objects;
 
 @Entity
+@Table(name = "repair", schema = "dbo")
 public class Repair {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id

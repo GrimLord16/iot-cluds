@@ -1,6 +1,8 @@
 spring:
   datasource:
-    url: ${MY_SQL_CONNECT}
+    url: ${DB_CONNECT}
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
   jpa:
     # Show or not log for each sql query
     show-sql: true

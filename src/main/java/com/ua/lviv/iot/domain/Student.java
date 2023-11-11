@@ -7,6 +7,7 @@ import java.util.Objects;
 import java.util.Set;
 
 @Entity
+@Table(name = "student", schema = "dbo")
 public class Student {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
@@ -26,7 +27,7 @@ public class Student {
     @JoinColumn(name = "student_card_id", referencedColumnName = "id", nullable = false)
     private StudentCard studentCard;
     @ManyToMany
-    @JoinTable(name = "student_has_equipment", catalog = "", schema = "mydb", joinColumns = @JoinColumn(name = "student_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "equipment_id", referencedColumnName = "id"))
+    @JoinTable(name = "student_has_equipment", schema = "dbo", joinColumns = @JoinColumn(name = "student_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "equipment_id", referencedColumnName = "id"))
     private Set<Equipment> equipments;
 
     public Integer getId() {
