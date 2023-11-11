@@ -1,4 +1,4 @@
-name: Build and deploy WAR app to Virtual Machine
+name: Build and deploy WAR app to Azure VM :)
 
 env:
   JAVA_VERSION: '17'
