@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      SQL_CONSTR: ${{ secrets.DB_CONNECT }}
+      DB_CONNECT: ${{ secrets.DB_CONNECT }}
       DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
       DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
       JAVA_VERSION: '17'
