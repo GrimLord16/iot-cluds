@@ -9,6 +9,9 @@ spring:
     hibernate:
       # Hibernate ddl auto (validate, create, create-drop, update)
       ddl-auto: update
+  properties:
+        hibernate:
+          dialect: org.hibernate.dialect.SQLServer2012Dialect
   mvc:  # the fix for swagger
     pathmatch:
       matching-strategy: ant_path_matcher
